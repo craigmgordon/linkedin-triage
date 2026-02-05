@@ -153,10 +153,10 @@ export FORCE_APPLY_FIRST_JOB=1
 
 ### Default search URL
 
-If you run with no arguments, the script uses the embedded `DEFAULT_SEARCH_URL`.
+If you run with no arguments, the script uses the embedded `DEFAULT_SEARCH_URL`. Note this url should be from the LinkedIn classic view NOt the AI assisted view.
 
 ```bash
-python FINAL_linkedin_auto_triage_classic.py
+python linkedin_triage.py
 ```
 
 ### Custom search URL
@@ -164,7 +164,7 @@ python FINAL_linkedin_auto_triage_classic.py
 Pass a LinkedIn job search URL as the first argument:
 
 ```bash
-python FINAL_linkedin_auto_triage_classic.py "https://www.linkedin.com/jobs/search/?..."
+python linkedin_triage.py "https://www.linkedin.com/jobs/search/?..."
 ```
 
 ---

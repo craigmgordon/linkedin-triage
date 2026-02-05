@@ -81,10 +81,11 @@ If the file does not exist, the script uses a small built-in fallback profile (l
 ### 2) LinkedIn search URL
 
 - Default: `DEFAULT_SEARCH_URL` (hard-coded)
+- Note this should be from the LinkedIn Classic view NOT the AI assisted view
 - Or pass a URL at runtime:
 
 ```bash
-python FINAL_linkedin_auto_triage_classic.py "https://www.linkedin.com/jobs/search/?..."
+python linkedin_triage.py "https://www.linkedin.com/jobs/search/?..."
 ```
 
 ### 3) Environment variables
@@ -238,7 +239,7 @@ pw_profile/   (Playwright persistent Chromium profile)
 To do a fast end-to-end test (including email + outputs) without processing many jobs:
 
 ```bash
-FORCE_APPLY_FIRST_JOB=1 python FINAL_linkedin_auto_triage_classic.py
+FORCE_APPLY_FIRST_JOB=1 python linkedin_triage.py
 ```
 
 In this mode, the first processed job is forced to APPLY and the script exits immediately after that job.

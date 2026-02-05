@@ -52,7 +52,7 @@ set +a
 
 # Run the job
 cd "/Users/craig/dev/automated-linkedin/FINAL"
-python3 "FINAL_linkedin_auto_triage_classic.py" >> "output/run.log" 2>&1
+python3 "linkedin_triage.py" >> "output/run.log" 2>&1
 ```
 
 **Add `.env` to `.gitignore`:**
@@ -69,7 +69,7 @@ Tip: you can also store the `.env` outside the repo (e.g. `~/.config/linkedin-tr
 ## What you need
 
 - Your script file, e.g.:
-  - `FINAL_linkedin_auto_triage_classic.py`
+  - `linkedin_triage.py`
 - A wrapper shell script that:
   - activates your Python environment (e.g. `pyenv`, `venv`)
   - exports required environment variables (OpenAI + SMTP)
@@ -115,9 +115,9 @@ export EMAIL_SUBJECT_PREFIX="[LinkedIn Triage]"
 
 # Optional: triage search URL override (or pass as argument)
 # SEARCH_URL="https://www.linkedin.com/jobs/search/?..."
-# "$PYTHON" FINAL_linkedin_auto_triage_classic.py "$SEARCH_URL"
+# "$PYTHON" linkedin_triage.py "$SEARCH_URL"
 
-"$PYTHON" FINAL_linkedin_auto_triage_classic.py
+"$PYTHON" linkedin_triage.py
 ```
 
 Make it executable:
