@@ -6,6 +6,10 @@
 *.p12
 *.pfx
 
+#Personal config
+input/candidate_profile.txt
+!input/candidate_profile.example.txt
+
 # Outputs / generated reports & caches
 output/
 *.log

@@ -1,0 +1,112 @@
+cat > input/candidate_profile.example.txt <<'EOF'
+CANDIDATE_PROFILE_VERSION: 1.0
+LAST_UPDATED: 2026-02-05
+CANDIDATE_NAME: Example Candidate
+LOCATION: UK (flexible)
+COMMUTE_MAX: 60_minutes_each_way
+
+WORK_PREFERENCE:
+  TYPE: open_to_perm_or_contract
+  CONTRACT: open
+  MODE: remote_preferred
+  REMOTE: preferred
+  WORK_LIFE_BALANCE: medium_priority
+  COMPANY_STAGE: open_to_all
+
+ROLE_TARGETS:
+  PRIMARY_TITLES:
+    - Data Engineer
+    - Analytics Engineer
+    - ETL Developer
+    - Business Intelligence Engineer
+  SECONDARY_TITLES:
+    - Data Platform Engineer
+    - Reporting Engineer
+  SENIORITY:
+    - mid_level_or_senior_individual_contributor
+
+COMPENSATION_TARGET:
+  TARGET_BASE_SALARY_GBP:
+    MIN: 45000
+    IDEAL: 55000-75000
+  NOTE: example-only; not tied to any real person
+
+SUMMARY_POSITIONING:
+  - Data/analytics specialist with strong pipeline and warehouse experience
+  - Comfortable working with stakeholders to define metrics and reporting needs
+  - Automation-first mindset for data quality, testing, and documentation
+
+CORE_TECH_STACK (HIGH_CONFIDENCE):
+  DATA_WAREHOUSE:
+    - Snowflake (or similar)
+    - BigQuery / Redshift (exposure)
+  TRANSFORM:
+    - dbt
+    - SQL (advanced)
+  ORCHESTRATION:
+    - Airflow (or similar)
+  LANGUAGES:
+    - Python
+  BI:
+    - Power BI (or Tableau/Looker equivalent)
+  QUALITY:
+    - data tests / validation checks
+    - basic CI for analytics projects (optional)
+
+DOMAIN_EXPERIENCE:
+  STRONG:
+    - consumer / retail analytics (example)
+  COMFORTABLE_WITH:
+    - KPI definition, dashboards, and data governance basics
+
+WORK_STYLE_SIGNAL_WORDS (POSITIVE_MATCH):
+  - structured, documentation-driven
+  - pragmatic and delivery-focused
+  - clear communication with non-technical stakeholders
+
+PREFERRED_RESPONSIBILITIES (HIGH_MATCH):
+  - build/maintain ELT pipelines and models
+  - improve data quality and observability
+  - develop dashboards and reporting layers
+  - partner with product/finance/ops teams on metrics
+  - performance optimisation for large datasets
+
+AVOID_OR_DOWNWEIGHT (RISK / LOWER_MATCH):
+  WORKLOAD_CULTURE:
+    - sustained weekend work / unrealistic deadlines
+  ROLE_SHAPE:
+    - roles that are purely IT support / helpdesk
+    - roles requiring deep ML research (not applied analytics)
+  TOOLING_MISMATCH:
+    - heavy Java/C++ backend roles with minimal data focus
+
+DEALBREAKERS (AUTO_REJECT_RULES):
+  - full-time on-site required
+  - unclear role scope or no ownership
+  - compensation well below stated minimum
+
+NICE_TO_HAVE (BOOSTERS):
+  - dimensional modelling (Kimball)
+  - data catalog / lineage tooling
+  - analytics engineering best practices (tests, docs, review process)
+
+SCORING_MODEL_SUGGESTION (FOR YOUR APP):
+  CATEGORY_THRESHOLDS:
+    APPLY: >= 75
+    MAYBE: 55-74
+    REJECT: < 55
+  WEIGHTS (TOTAL 100):
+    ROLE_FIT_TITLE_AND_SENIORITY: 20
+    WORK_ARRANGEMENT_HYBRID_REMOTE: 15
+    COMMUTE: 5
+    COMPANY_STAGE_STABILITY: 5
+    CORE_TECH_MATCH: 30
+    RESPONSIBILITIES_MATCH: 15
+    CULTURE_STRESS_ONCALL: 10
+  HARD_PENALTIES:
+    - heavy_oncall_or_24x7: -25
+    - unclear_role_scope: -15
+    - low_automation_or_no_tests: -10
+    - on_site_only: auto_reject
+    - commute_over_limit: auto_reject
+EOF
