@@ -1,0 +1,24 @@
+# Secrets / local config
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Outputs / generated reports & caches
+output/
+*.log
+
+# Playwright persistent profile (contains cookies/session)
+pw_profile/
+
+# Python cache / venv
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.envrc
+
+# macOS noise
+.DS_Store
