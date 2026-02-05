@@ -1,0 +1,2209 @@
+{
+  "4357543122": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Company stage not aligned with preference for established companies.",
+      "Lack of strong match with required cloud technologies (AWS/Azure).",
+      "No clear evidence of required CI/CD pipeline experience with AWS/Azure."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "DevOps culture",
+      "CI/CD pipelines",
+      "Infrastructure as code"
+    ],
+    "missing_skills": [
+      "AWS or Azure experience",
+      "Experience with specific tools mentioned in job description"
+    ]
+  },
+  "4368142049": {
+    "total_score_100": 75.0,
+    "score_10": 7.5,
+    "decision": "APPLY",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 10,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 25,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Strong match for GCP and Terraform experience",
+      "Relevant experience in financial services and regulated environments",
+      "Preferred work arrangement aligns with hybrid model",
+      "Commute is within acceptable limits",
+      "Core tech stack matches job requirements"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Terraform",
+      "CI/CD",
+      "Kubernetes",
+      "Infrastructure as Code"
+    ],
+    "missing_skills": []
+  },
+  "4368021569": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 15,
+      "commute": 10,
+      "company_stage_stability": 5,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 20,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Job requires Azure or AWS experience, candidate is GCP focused.",
+      "Company is a startup, candidate prefers established companies.",
+      "Role requires 2+ years in DevOps, candidate has relevant experience but may not meet all requirements."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "DevOps practices",
+      "CI/CD",
+      "Terraform",
+      "Kubernetes"
+    ],
+    "missing_skills": [
+      "Azure or AWS experience",
+      "Version Control Tools (Git, GitLab)",
+      "Security standards in CI/CD"
+    ]
+  },
+  "4368395649": {
+    "total_score_100": 70.0,
+    "score_10": 7.0,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 5,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Strong experience in cloud and DevOps roles.",
+      "Hybrid work arrangement aligns with preference.",
+      "Commute within acceptable limits.",
+      "Company is established, but not ideal.",
+      "Core tech stack partially matches.",
+      "Responsibilities align with candidate's experience."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Kubernetes",
+      "Terraform",
+      "Jenkins",
+      "CI/CD",
+      "DevOps practices"
+    ],
+    "missing_skills": [
+      "AWS experience",
+      "SRE leadership experience",
+      "Specific observability tools mentioned in job description"
+    ]
+  },
+  "4368831040": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 15,
+      "commute": 10,
+      "company_stage_stability": 5,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Job requires AWS experience, candidate is GCP focused.",
+      "Company is a startup, candidate prefers established companies.",
+      "Role involves on-call responsibilities, candidate prefers to avoid high on-call culture."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "DevOps",
+      "Cloud Platform Engineering",
+      "CI/CD",
+      "Infrastructure as Code"
+    ],
+    "missing_skills": [
+      "AWS experience",
+      "Experience with Amazon ECS",
+      "Experience with Ruby, JavaScript, or Go"
+    ]
+  },
+  "4368660379": {
+    "total_score_100": 70.0,
+    "score_10": 7.0,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 5,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Strong experience in DevOps and cloud engineering.",
+      "Hybrid work preference matches job description.",
+      "Compensation range aligns with candidate's expectations.",
+      "Experience with CI/CD and automation tools.",
+      "Job requires Java experience, which candidate has."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "DevOps",
+      "Cloud Engineering",
+      "CI/CD",
+      "Automation",
+      "Java"
+    ],
+    "missing_skills": [
+      "Experience with AWS",
+      "Message brokers like Kafka or ActiveMQ"
+    ]
+  },
+  "4357455593": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 15,
+      "commute": 10,
+      "company_stage_stability": 5,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Job requires AWS experience, candidate is GCP focused.",
+      "Company is a startup, candidate prefers established companies.",
+      "Role does not align with candidate's strong DevOps focus."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "DevOps experience",
+      "CI/CD knowledge",
+      "Infrastructure as Code"
+    ],
+    "missing_skills": [
+      "AWS experience",
+      "C# or Ruby expertise"
+    ]
+  },
+  "4368639235": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 0,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Company stage stability not aligned (early-stage startup)",
+      "Responsibilities match is low",
+      "Cultural fit with on-call requirements is not suitable"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Kubernetes",
+      "Terraform",
+      "Jenkins"
+    ],
+    "missing_skills": [
+      "OpenShift",
+      "Service mesh technologies",
+      "CI/CD pipeline management with GitOps principles"
+    ]
+  },
+  "4357800251": {
+    "total_score_100": 85.0,
+    "score_10": 8.5,
+    "decision": "APPLY",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 10,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 25,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Strong alignment with role title and seniority",
+      "Preferred hybrid work arrangement matches",
+      "Commute within acceptable limits",
+      "Company stability aligns with candidate preference",
+      "Core tech stack matches well",
+      "Responsibilities match candidate's experience"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Kubernetes",
+      "Terraform",
+      "Jenkins",
+      "CI/CD",
+      "DevOps practices"
+    ],
+    "missing_skills": [
+      "AWS",
+      "Azure",
+      "OpenShift"
+    ]
+  },
+  "4368691222": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 15,
+      "commute": 10,
+      "company_stage_stability": 5,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Job primarily focused on AWS, while candidate specializes in GCP.",
+      "Company is a startup, which candidate prefers to avoid.",
+      "Role requires deep AWS experience, which candidate lacks."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "DevOps experience",
+      "Cloud infrastructure management",
+      "CI/CD pipeline experience"
+    ],
+    "missing_skills": [
+      "AWS specific experience",
+      "Experience with CloudFormation",
+      "Experience in high-intensity culture"
+    ]
+  },
+  "4368237823": {
+    "total_score_100": 70.0,
+    "score_10": 7.0,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 25,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 10
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Strong match for role titles and seniority.",
+      "Preferred hybrid work arrangement aligns with job.",
+      "Commute is acceptable.",
+      "Core tech stack match is strong.",
+      "Responsibilities match well with candidate's experience."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Kubernetes",
+      "Terraform",
+      "Jenkins",
+      "CI/CD",
+      "DevOps principles"
+    ],
+    "missing_skills": [
+      "Experience with AWS or Azure",
+      "Experience with Typescript, Go, or Rust"
+    ]
+  },
+  "4357425057": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "REJECT",
+    "category_scores": {
+      "role_fit_title_and_seniority": 0,
+      "work_arrangement_hybrid_remote": 15,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": true
+    },
+    "reasons": [
+      "Commute exceeds 90 minutes",
+      "Role primarily focused on Java without strong DevOps alignment",
+      "Company stage not aligned with candidate's preference"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "Java",
+      "Site Reliability Engineering",
+      "CI/CD",
+      "DevOps practices"
+    ],
+    "missing_skills": [
+      "GCP",
+      "Kubernetes",
+      "Terraform",
+      "Jenkins"
+    ]
+  },
+  "4368219114": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "REJECT",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 15,
+      "commute": 0,
+      "company_stage_stability": 5,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": true
+    },
+    "reasons": [
+      "Commute exceeds 90 minutes",
+      "Role requires AWS and Azure focus, while candidate prefers GCP"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Terraform",
+      "Kubernetes",
+      "Jenkins"
+    ],
+    "missing_skills": [
+      "AWS",
+      "Azure"
+    ]
+  },
+  "4352810950": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 15,
+      "commute": 10,
+      "company_stage_stability": 5,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Job requires Azure expertise, which is not a strong match.",
+      "Role is primarily focused on OpenShift, which is not in the candidate's core tech stack.",
+      "Company is a startup, which the candidate prefers to avoid."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "CI/CD pipelines",
+      "Automation",
+      "Infrastructure as Code"
+    ],
+    "missing_skills": [
+      "Azure expertise",
+      "OpenShift experience",
+      "SRE methodologies"
+    ]
+  },
+  "4367887164": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "REJECT",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 15,
+      "commute": 0,
+      "company_stage_stability": 5,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": true
+    },
+    "reasons": [
+      "Commute exceeds 90 minutes",
+      "Role primarily focused on Java/SRE, not aligned with DevOps focus",
+      "Company stage not preferred (Fintech startup)"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "Java",
+      "Site Reliability Engineering",
+      "CI/CD practices"
+    ],
+    "missing_skills": [
+      "GCP",
+      "Kubernetes",
+      "Terraform"
+    ]
+  },
+  "4368260285": {
+    "total_score_100": 75.0,
+    "score_10": 7.5,
+    "decision": "APPLY",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 10,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 25,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Strong alignment with role title and seniority",
+      "Preferred hybrid work arrangement matches",
+      "Commute within acceptable limits",
+      "Company stage preference aligns with established company",
+      "Core tech stack match is strong",
+      "Responsibilities match well with candidate's experience"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Kubernetes",
+      "Terraform",
+      "Jenkins",
+      "CI/CD",
+      "Infrastructure as Code"
+    ],
+    "missing_skills": [
+      "AWS experience",
+      "GitOps tooling experience"
+    ]
+  },
+  "4368684322": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 25,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Company stage not aligned with candidate preference",
+      "High intensity culture indicated in job description",
+      "Role requires deep specialist networking focus",
+      "No clear alignment with candidate's work-life balance priorities"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Terraform",
+      "Kubernetes",
+      "CI/CD"
+    ],
+    "missing_skills": [
+      "Ansible",
+      "Nginx",
+      "PHP",
+      "MySQL"
+    ]
+  },
+  "4354813624": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 15,
+      "commute": 10,
+      "company_stage_stability": 5,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Role requires experience with AWS/Azure which is not highlighted.",
+      "Company is a startup which is a preference against.",
+      "High intensity culture indicated in job description."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD"
+    ],
+    "missing_skills": [
+      "Experience with AWS/Azure",
+      "Experience with Golang or C++"
+    ]
+  },
+  "4368251266": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 10,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 25,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 10
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Job requires AWS certification, candidate is GCP focused.",
+      "Role emphasizes Kubernetes and ArgoCD, candidate lacks experience with ArgoCD.",
+      "Company is a consultancy, candidate prefers established companies."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "DevOps Engineer experience",
+      "CI/CD pipelines",
+      "Infrastructure as Code",
+      "Kubernetes",
+      "Terraform"
+    ],
+    "missing_skills": [
+      "AWS certification",
+      "ArgoCD experience",
+      "Consultancy experience"
+    ]
+  },
+  "4357400508": {
+    "total_score_100": 75.0,
+    "score_10": 7.5,
+    "decision": "APPLY",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 25,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Strong match for role titles and seniority",
+      "Preferred hybrid work arrangement",
+      "Commute within acceptable limits",
+      "High core tech match with GCP, Kubernetes, Terraform, and Jenkins",
+      "Relevant responsibilities match"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Kubernetes",
+      "Terraform",
+      "Jenkins",
+      "CI/CD",
+      "Automation"
+    ],
+    "missing_skills": [
+      "OnPrem Networking",
+      "GitOps pipelines",
+      "Advanced scripting in Go"
+    ]
+  },
+  "4286640979": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Company is a small startup, which is a preference avoid.",
+      "Role requires strong AWS skills, while candidate is GCP focused.",
+      "High intensity culture implied by the nature of the work."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "DevOps experience",
+      "CI/CD",
+      "Infrastructure as Code",
+      "Cloud experience"
+    ],
+    "missing_skills": [
+      "AWS expertise",
+      "Ansible experience",
+      "Networking experience with AWS"
+    ]
+  },
+  "4368638301": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Company is a small startup, which is a preference against.",
+      "Role requires strong AWS skills, while candidate is GCP focused.",
+      "High intensity culture implied by the nature of the work."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "DevOps experience",
+      "Linux focus",
+      "Configuration management",
+      "Automation with Bash and Python"
+    ],
+    "missing_skills": [
+      "Strong AWS skills",
+      "Experience in financial, trading or gaming sector"
+    ]
+  },
+  "4368090700": {
+    "total_score_100": 75.0,
+    "score_10": 7.5,
+    "decision": "APPLY",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 25,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Strong match for role titles and seniority",
+      "Preferred work arrangement is hybrid, which matches job",
+      "Commute is acceptable",
+      "Core tech stack match is strong",
+      "Responsibilities align well with candidate's experience"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Kubernetes",
+      "Terraform",
+      "Jenkins",
+      "CI/CD",
+      "Automation"
+    ],
+    "missing_skills": [
+      "OnPrem Networking",
+      "GitOps pipelines",
+      "Scripting in Go"
+    ]
+  },
+  "4357411669": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 0,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Company stage not aligned with preference for established companies.",
+      "Role primarily focused on Azure, while candidate has strong GCP experience.",
+      "Lack of specific Azure DevOps experience."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "DevOps",
+      "CI/CD",
+      "Infrastructure as Code",
+      "Cloud Architecture"
+    ],
+    "missing_skills": [
+      "Azure DevOps",
+      "PowerShell",
+      "ARM templates",
+      "GitOps"
+    ]
+  },
+  "4368674199": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Company stage not aligned with preference for established companies",
+      "Job requires deep AWS expertise, while candidate is GCP-focused",
+      "Role is DevSecOps, which is not a direct match for candidate's profile"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "Terraform",
+      "Kubernetes",
+      "CI/CD"
+    ],
+    "missing_skills": [
+      "AWS expertise",
+      "DevSecOps experience"
+    ]
+  },
+  "4368684186": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 15,
+      "commute": 10,
+      "company_stage_stability": 5,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 20,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Job requires strong Java and JVM knowledge, which is not highlighted in the profile.",
+      "Role is primarily focused on AWS, while the candidate specializes in GCP.",
+      "Company is a fintech, which may not align with the candidate's preference for established companies."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "DevOps experience",
+      "CI/CD knowledge",
+      "Cloud infrastructure experience"
+    ],
+    "missing_skills": [
+      "Strong Java and JVM internals knowledge",
+      "Experience with AWS services",
+      "Experience with message brokers like Kafka or ActiveMQ"
+    ]
+  },
+  "4368690180": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 15,
+      "commute": 10,
+      "company_stage_stability": 5,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Job primarily focused on AWS, while candidate specializes in GCP.",
+      "Company is a startup, which candidate prefers to avoid.",
+      "Role requires deep AWS experience, which candidate lacks."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "DevOps experience",
+      "Cloud infrastructure management",
+      "CI/CD pipeline experience"
+    ],
+    "missing_skills": [
+      "AWS expertise",
+      "Experience with CloudFormation",
+      "Experience in high-intensity culture"
+    ]
+  },
+  "4367878313": {
+    "total_score_100": 45.0,
+    "score_10": 4.5,
+    "decision": "REJECT",
+    "category_scores": {
+      "role_fit_title_and_seniority": 0,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 0,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": true
+    },
+    "reasons": [
+      "Commute exceeds 90 minutes",
+      "Role primarily focused on AWS, not GCP",
+      "No strong match for core tech stack"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [],
+    "missing_skills": [
+      "AWS experience",
+      "Serverless architecture",
+      "SRE practices"
+    ]
+  },
+  "4367869274": {
+    "total_score_100": 45.0,
+    "score_10": 4.5,
+    "decision": "REJECT",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 0,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 0,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": true
+    },
+    "reasons": [
+      "Commute exceeds 90 minutes",
+      "Role requires AWS expertise, not GCP",
+      "Company is a startup, which is a preference against"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "Kubernetes",
+      "Terraform",
+      "CI/CD"
+    ],
+    "missing_skills": [
+      "AWS",
+      "GitHub Actions",
+      "DataDog",
+      "Python and Lambdas"
+    ]
+  },
+  "4304702387": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 0,
+      "work_arrangement_hybrid_remote": 0,
+      "commute": 10,
+      "company_stage_stability": 10,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 25,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Role does not align with candidate's title and seniority preferences.",
+      "Job requires on-site presence, which is not acceptable for the candidate.",
+      "Candidate prefers established companies, while this is a trading platform role.",
+      "Lack of relevant experience in OMS/EMS systems."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "Cloud Platform Engineering",
+      "DevOps",
+      "CI/CD",
+      "Infrastructure as Code"
+    ],
+    "missing_skills": [
+      "OMS/EMS experience",
+      "C# or advanced SQL skills",
+      "UI framework experience (Angular, React)"
+    ]
+  },
+  "4358352817": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 0,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Company stage not aligned (early-stage startup)",
+      "Core tech stack mismatch (AWS focus)",
+      "Responsibilities do not match (ML focus)",
+      "No strong IaC or automation emphasis in profile"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "Cloud experience",
+      "DevOps practices",
+      "CI/CD knowledge"
+    ],
+    "missing_skills": [
+      "AWS expertise",
+      "Machine learning experience",
+      "Terraform and CloudFormation proficiency"
+    ]
+  },
+  "4368525565": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 0,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Company is a startup, which is a dealbreaker.",
+      "Role requires deep AWS experience, while candidate is GCP-focused.",
+      "Job culture emphasizes fast-paced startup environment, which candidate wants to avoid."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Terraform",
+      "Kubernetes",
+      "CI/CD"
+    ],
+    "missing_skills": [
+      "AWS",
+      "AI tools integration",
+      "fast-paced startup experience"
+    ]
+  },
+  "4368294342": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 15,
+      "commute": 10,
+      "company_stage_stability": 5,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Job requires strong AWS experience, candidate is GCP focused.",
+      "Company is a startup, candidate prefers established companies.",
+      "Role does not align with candidate's preferred responsibilities."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "DevOps",
+      "Cloud Engineering",
+      "CI/CD",
+      "Infrastructure as Code"
+    ],
+    "missing_skills": [
+      "Haskell",
+      "AWS",
+      "SRE practices"
+    ]
+  },
+  "4369045073": {
+    "total_score_100": 85.0,
+    "score_10": 8.5,
+    "decision": "APPLY",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 10,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 25,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Strong alignment with role title and seniority",
+      "Preferred hybrid work arrangement matches",
+      "Commute within acceptable limits",
+      "Company stability aligns with candidate preference",
+      "Core tech stack match is strong",
+      "Responsibilities match well with candidate's experience"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Terraform",
+      "Kubernetes",
+      "CI/CD",
+      "DevOps practices"
+    ],
+    "missing_skills": [
+      "Experience with blockchain infrastructure",
+      "Familiarity with observability tools like Prometheus or OpenTelemetry"
+    ]
+  },
+  "4369027850": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 10,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Job requires C# expertise which is not highlighted in the profile.",
+      "Role is primarily focused on AWS/Azure, while candidate prefers GCP.",
+      "Company is a SaaS startup, which candidate prefers to avoid."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "Kubernetes",
+      "Terraform",
+      "DevOps"
+    ],
+    "missing_skills": [
+      "C#",
+      "AWS",
+      "Azure"
+    ]
+  },
+  "4368581140": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 20,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Company stage not aligned with preference for established companies.",
+      "Role primarily focused on AWS, while candidate has strong GCP experience.",
+      "On-call rotation mentioned, which may indicate high-stress culture."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD"
+    ],
+    "missing_skills": [
+      "AWS",
+      "GitHub Actions",
+      "OpenTelemetry"
+    ]
+  },
+  "4369035172": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 0,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 0,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 15
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Role does not align with candidate's target titles.",
+      "Company stage preference not met.",
+      "Core tech stack does not match.",
+      "Lack of relevant AI experience."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [],
+    "missing_skills": [
+      "Experience with AI systems in production.",
+      "Proficiency in Ruby on Rails.",
+      "Experience with RAG architecture."
+    ]
+  },
+  "4369486632": {
+    "total_score_100": 85.0,
+    "score_10": 8.5,
+    "decision": "APPLY",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 5,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 25,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Strong match for role title and seniority",
+      "Hybrid work arrangement preferred",
+      "Commute within acceptable limits",
+      "Established company stage preferred",
+      "High match on core tech stack",
+      "Responsibilities align well with experience"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "Kubernetes",
+      "Terraform",
+      "Google Cloud Platform",
+      "CI/CD",
+      "Python",
+      "Automation"
+    ],
+    "missing_skills": [
+      "GPU scheduling",
+      "Data engineering at scale"
+    ]
+  },
+  "4369067226": {
+    "total_score_100": 75.0,
+    "score_10": 7.5,
+    "decision": "APPLY",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 10,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 25,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Strong match for role title and seniority",
+      "Preferred hybrid work arrangement",
+      "Commute within acceptable limits",
+      "Strong core tech match with GCP, Kubernetes, Terraform, and Jenkins",
+      "Relevant responsibilities match",
+      "No penalties applied"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Kubernetes",
+      "Terraform",
+      "Jenkins",
+      "HashiCorp Vault",
+      "CI/CD"
+    ],
+    "missing_skills": []
+  },
+  "4358037852": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Job requires AWS experience, candidate is GCP focused.",
+      "Company is a startup, candidate prefers established companies.",
+      "Role involves on-call duties, candidate prefers to avoid high on-call culture."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "CI/CD pipelines",
+      "Infrastructure as Code",
+      "Kubernetes"
+    ],
+    "missing_skills": [
+      "AWS experience",
+      "GitOps principles",
+      "LEMP stack"
+    ]
+  },
+  "4360572492": {
+    "total_score_100": 60.0,
+    "score_10": 6.0,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 5,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 10,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Role title aligns with candidate's experience.",
+      "Hybrid work arrangement matches preference.",
+      "Commute is acceptable.",
+      "Company stage is not ideal but acceptable.",
+      "Core tech stack has some alignment.",
+      "Responsibilities match partially."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "SRE experience",
+      "Containerization (Kubernetes, Docker)",
+      "CI/CD practices",
+      "Infrastructure as Code (Terraform)",
+      "Monitoring tools"
+    ],
+    "missing_skills": [
+      "AWS experience",
+      "Specific API/Application background"
+    ]
+  },
+  "4358051865": {
+    "total_score_100": 70.0,
+    "score_10": 7.0,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 10,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Strong match for role titles and seniority",
+      "Preferred hybrid work arrangement aligns with job",
+      "Commute within acceptable limits",
+      "Company stability aligns with candidate preference",
+      "Core tech stack has partial match",
+      "Responsibilities match well"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "DevOps",
+      "Terraform",
+      "Kubernetes",
+      "CI/CD",
+      "Cloud Infrastructure"
+    ],
+    "missing_skills": [
+      "AWS experience",
+      "PHP or NodeJS programming knowledge"
+    ]
+  },
+  "4352352498": {
+    "total_score_100": 70.0,
+    "score_10": 7.0,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 20,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Strong match for role titles and seniority.",
+      "Hybrid work preference aligns with job description.",
+      "Commute is acceptable.",
+      "Core tech stack has some overlap but lacks Azure experience.",
+      "Company stage preference not met as it's a consultancy.",
+      "Responsibilities match is limited due to focus on mentoring."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "DevOps",
+      "Cloud Engineering",
+      "CI/CD",
+      "Infrastructure as Code",
+      "Kubernetes",
+      "Terraform"
+    ],
+    "missing_skills": [
+      "Azure expertise",
+      "Coaching experience"
+    ]
+  },
+  "4369444959": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 10,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Job requires strong C# skills which are not highlighted in the profile.",
+      "Role is focused on Azure/AWS, while candidate prefers GCP.",
+      "Company is a SaaS startup, which candidate prefers to avoid."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "Kubernetes",
+      "Terraform",
+      "DevOps"
+    ],
+    "missing_skills": [
+      "C#",
+      "Azure",
+      "AWS"
+    ]
+  },
+  "4357630815": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "REJECT",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 25,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": true
+    },
+    "reasons": [
+      "Commute exceeds 90 minutes each way"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Kubernetes",
+      "Terraform",
+      "Jenkins",
+      "CI/CD",
+      "DevOps"
+    ],
+    "missing_skills": []
+  },
+  "4361674219": {
+    "total_score_100": 85.0,
+    "score_10": 8.5,
+    "decision": "APPLY",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 10,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 25,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Strong alignment with role title and seniority",
+      "Preferred hybrid work arrangement",
+      "Commute within acceptable limits",
+      "Stable company stage preference met",
+      "High match on core tech stack",
+      "Good fit for responsibilities"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Kubernetes",
+      "Terraform",
+      "Jenkins",
+      "CI/CD",
+      "Infrastructure as Code"
+    ],
+    "missing_skills": []
+  },
+  "4358898221": {
+    "total_score_100": 75.0,
+    "score_10": 7.5,
+    "decision": "APPLY",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 10,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 25,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Strong alignment with role titles and seniority",
+      "Preferred hybrid work arrangement matches",
+      "Commute within acceptable limits",
+      "Company stability aligns with candidate preference",
+      "Core tech stack matches well",
+      "Responsibilities match candidate's experience"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "DevOps practices",
+      "CI/CD tools",
+      "Containerization",
+      "Automation",
+      "Cloud infrastructure",
+      "Mentoring experience"
+    ],
+    "missing_skills": [
+      "Experience with AWS or Azure",
+      "Specific experience with tools like Helm or ArgoCD"
+    ]
+  },
+  "4368788212": {
+    "total_score_100": 75.0,
+    "score_10": 7.5,
+    "decision": "APPLY",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 10,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 25,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Strong alignment with role title and seniority",
+      "Preferred hybrid work arrangement matches",
+      "Commute within acceptable limits",
+      "Company stability aligns with candidate preference",
+      "Core tech stack matches well",
+      "Responsibilities match candidate's experience"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "DevOps practices",
+      "CI/CD tools",
+      "Containerization",
+      "Automation",
+      "Cloud technologies",
+      "Mentoring experience"
+    ],
+    "missing_skills": [
+      "Experience with specific tools like Helm and Splunk",
+      "Experience with NoSQL databases"
+    ]
+  },
+  "4369064540": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 0,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Company stage not aligned (early-stage startup)",
+      "Core tech stack mismatch (Azure vs GCP)",
+      "Responsibilities do not match (focus on Azure DevOps)",
+      "Cultural fit concerns (high-intensity environment)"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "DevOps",
+      "CI/CD",
+      "Terraform",
+      "Kubernetes"
+    ],
+    "missing_skills": [
+      "Azure",
+      "AKS",
+      "Azure Web Services",
+      "Visual Studio Team Services"
+    ]
+  },
+  "4369040708": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Company stage not aligned with candidate preference",
+      "Role requires Azure expertise, candidate is GCP focused",
+      "Job title does not match candidate's primary targets"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "Terraform",
+      "Kubernetes"
+    ],
+    "missing_skills": [
+      "Azure"
+    ]
+  },
+  "4368762758": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 15,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 20,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Company is a startup, which is a dealbreaker.",
+      "Role requires AWS expertise, while candidate is GCP-focused.",
+      "High on-call culture indicated in job description."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "CI/CD pipeline implementation",
+      "Kubernetes management",
+      "Infrastructure as Code (IaC)",
+      "Automation and scripting"
+    ],
+    "missing_skills": [
+      "AWS expertise",
+      "Experience in a startup environment"
+    ]
+  },
+  "4369451362": {
+    "total_score_100": 45.0,
+    "score_10": 4.5,
+    "decision": "REJECT",
+    "category_scores": {
+      "role_fit_title_and_seniority": 0,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 0,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 0,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 15
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": true
+    },
+    "reasons": [
+      "Commute exceeds 90 minutes",
+      "Role primarily focused on Azure, not GCP",
+      "No match for core tech stack"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [],
+    "missing_skills": [
+      "Azure expertise",
+      "Relevant Azure certifications"
+    ]
+  },
+  "4369459140": {
+    "total_score_100": 45.0,
+    "score_10": 4.5,
+    "decision": "REJECT",
+    "category_scores": {
+      "role_fit_title_and_seniority": 0,
+      "work_arrangement_hybrid_remote": 0,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 25,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": true
+    },
+    "reasons": [
+      "Commute exceeds 90 minutes each way."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "Terraform",
+      "Infrastructure as Code"
+    ],
+    "missing_skills": [
+      "AWS",
+      "Serverless Architectures",
+      "AWS Lambda",
+      "DynamoDB"
+    ]
+  },
+  "4359000810": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 15,
+      "commute": 10,
+      "company_stage_stability": 5,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 20,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Role requires AWS experience, candidate is GCP focused.",
+      "Company is a startup, candidate prefers established companies.",
+      "Job requires heavy on-call, candidate avoids high-oncall culture."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Terraform",
+      "Kubernetes",
+      "CI/CD"
+    ],
+    "missing_skills": [
+      "AWS",
+      "Node.js",
+      "React",
+      "Typescript"
+    ]
+  },
+  "4369202625": {
+    "total_score_100": 75.0,
+    "score_10": 7.5,
+    "decision": "APPLY",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 10,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 25,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Strong match for role title and seniority",
+      "Preferred hybrid work arrangement aligns with job",
+      "Commute within acceptable limits",
+      "Core tech stack match is strong",
+      "Responsibilities match well with candidate's experience"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Kubernetes",
+      "Terraform",
+      "Jenkins",
+      "CI/CD",
+      "Automation"
+    ],
+    "missing_skills": [
+      "Experience with Puppet or Go"
+    ]
+  },
+  "4368588711": {
+    "total_score_100": 85.0,
+    "score_10": 8.5,
+    "decision": "APPLY",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 10,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 25,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 5
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Strong alignment with role title and seniority",
+      "Preferred hybrid work arrangement matches",
+      "Commute within acceptable limits",
+      "Company stage preference aligns with established company",
+      "Core tech stack match is strong",
+      "Responsibilities match well with candidate's experience"
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Terraform",
+      "Kubernetes",
+      "CI/CD",
+      "DevOps practices"
+    ],
+    "missing_skills": [
+      "Experience with blockchain infrastructure"
+    ]
+  },
+  "4369058503": {
+    "total_score_100": 70.0,
+    "score_10": 7.0,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 20,
+      "responsibilities_match_platform_automation_ops": 10,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Company stage not aligned with preference for established companies.",
+      "Role primarily focused on SRE, which may not fully match DevOps focus.",
+      "High emphasis on AWS, while candidate is GCP-focused."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "GCP",
+      "Terraform",
+      "Kubernetes",
+      "CI/CD"
+    ],
+    "missing_skills": [
+      "AWS expertise",
+      "Experience with distributed ledger systems"
+    ]
+  },
+  "4316495576": {
+    "total_score_100": 70.0,
+    "score_10": 7.0,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 15,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 10,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 20,
+      "responsibilities_match_platform_automation_ops": 5,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Strong match for role titles and seniority.",
+      "Preferred hybrid work arrangement aligns with job.",
+      "Commute is acceptable.",
+      "Company stability preference aligns with job.",
+      "Core tech stack match is good but not perfect.",
+      "Responsibilities match is lower due to specific CI/CD focus."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "CI/CD pipelines",
+      "Automation scripting",
+      "Collaboration across teams",
+      "Cloud infrastructure experience"
+    ],
+    "missing_skills": [
+      "Experience with AWS or Azure",
+      "Configuration management expertise with Puppet",
+      "Monitoring solutions design"
+    ]
+  },
+  "4368721101": {
+    "total_score_100": 55.0,
+    "score_10": 5.5,
+    "decision": "MAYBE",
+    "category_scores": {
+      "role_fit_title_and_seniority": 10,
+      "work_arrangement_hybrid_remote": 20,
+      "commute": 10,
+      "company_stage_stability": 0,
+      "core_tech_match_gcp_k8s_terraform_jenkins": 15,
+      "responsibilities_match_platform_automation_ops": 0,
+      "culture_stress_oncall": 0
+    },
+    "penalties_applied": [],
+    "auto_reject_flags": {
+      "on_site_only": false,
+      "commute_over_90": false
+    },
+    "reasons": [
+      "Company stage is a startup, which is a dealbreaker.",
+      "Role responsibilities do not align with candidate's preferences.",
+      "Lack of strong match in core tech stack."
+    ],
+    "questions_to_ask": [],
+    "red_flags": [],
+    "matched_skills": [
+      "DevOps",
+      "Cloud Engineering",
+      "CI/CD",
+      "Kubernetes",
+      "Terraform"
+    ],
+    "missing_skills": [
+      "Experience with Snowflake or similar",
+      "Data platform engineering experience",
+      "Experience in analytics-heavy applications"
+    ]
+  }
+}
