@@ -149,15 +149,17 @@ There are two distinct contexts:
   `"[3/30] MAYBE 6.1/10 (61.0/100) — Senior DevOps Engineer @ Company"`
 
 If something fails, you’ll see the traceback in your Terminal.
+The script also writes timestamped logs under `output/logs/`.
 
 ### B) When run via launchd (scheduled)
 
-Your plist specifies log files:
+The script writes timestamped logs:
 
-- **stdout:** `output/launchd.out.log`
-- **stderr:** `output/launchd.err.log`
+- **stdout:** `output/logs/YYYY-MM-DD_HH-MM-SS.out.log`
+- **stderr:** `output/logs/YYYY-MM-DD_HH-MM-SS.err.log`
 
-These are the first places to check after a scheduled run fails.
+These are the first places to check after a scheduled run fails. The script
+keeps only the last 3 days of logs by default.
 
 ---
 
@@ -226,8 +228,9 @@ output/
   shortlist_apply_YYYY-MM-DD.md
   seen_jobs.json
   llm_cache.json
-  launchd.out.log
-  launchd.err.log
+  logs/
+    YYYY-MM-DD_HH-MM-SS.out.log
+    YYYY-MM-DD_HH-MM-SS.err.log
 
 pw_profile/   (Playwright persistent Chromium profile)
 ```

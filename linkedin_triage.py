@@ -33,9 +33,9 @@ import sys
 import time
 import os
 from dataclasses import dataclass, asdict
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
-from typing import Dict, List, Set, Tuple
+from typing import Dict, List, Optional, Set, Tuple
 
 from openai import OpenAI
 from playwright.sync_api import sync_playwright
@@ -65,6 +65,10 @@ FORCE_APPLY_FIRST_JOB = os.getenv("FORCE_APPLY_FIRST_JOB", "0") == "1"
 # Input/output structure
 INPUT_DIR = Path("input")
 OUTPUT_DIR = Path("output")
+
+# Logging
+LOG_DIR = OUTPUT_DIR / "logs"
+LOG_RETENTION_DAYS = int(os.getenv("LOG_RETENTION_DAYS", "3").strip() or "3")
 
 PROFILE_FILE = INPUT_DIR / "candidate_profile.txt"
 LLM_CACHE_FILE = OUTPUT_DIR / "llm_cache.json"   # job_id -> cached LLM outputs
@@ -111,6 +115,71 @@ SMTP_TO = os.getenv("SMTP_TO", "").strip()
 EMAIL_ENABLED = os.getenv("EMAIL_ENABLED", "").strip()
 EMAIL_SUBJECT_PREFIX = os.getenv(
     "EMAIL_SUBJECT_PREFIX", "[LinkedIn Triage]").strip()
+
+# =============================================================================
+# Logging (stdout/stderr -> timestamped daily files)
+# =============================================================================
+
+class TimestampedTee:
+    def __init__(self, stream, file_handle):
+        self.stream = stream
+        self.file_handle = file_handle
+        self.at_line_start = True
+
+    def write(self, data: str) -> int:
+        if not data:
+            return 0
+        written = 0
+        for chunk in data.splitlines(True):
+            if self.at_line_start:
+                ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                prefix = f"[{ts}] "
+                self.stream.write(prefix)
+                self.file_handle.write(prefix)
+                written += len(prefix)
+            self.stream.write(chunk)
+            self.file_handle.write(chunk)
+            written += len(chunk)
+            self.at_line_start = chunk.endswith("\n")
+        self.stream.flush()
+        self.file_handle.flush()
+        return written
+
+    def flush(self) -> None:
+        self.stream.flush()
+        self.file_handle.flush()
+
+    def isatty(self) -> bool:
+        return self.stream.isatty()
+
+
+def _cleanup_old_logs(log_dir: Path, retention_days: int) -> None:
+    cutoff = datetime.now() - timedelta(days=retention_days)
+    for path in log_dir.glob("*.log"):
+        try:
+            if datetime.fromtimestamp(path.stat().st_mtime) < cutoff:
+                path.unlink()
+        except OSError:
+            # Best-effort cleanup; ignore files that disappear or are locked.
+            pass
+
+
+def setup_logging() -> None:
+    LOG_DIR.mkdir(parents=True, exist_ok=True)
+    run_ts = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    out_path = LOG_DIR / f"{run_ts}.out.log"
+    err_path = LOG_DIR / f"{run_ts}.err.log"
+
+    out_handle = out_path.open("a", encoding="utf-8")
+    err_handle = err_path.open("a", encoding="utf-8")
+
+    sys.stdout = TimestampedTee(sys.stdout, out_handle)
+    sys.stderr = TimestampedTee(sys.stderr, err_handle)
+
+    _cleanup_old_logs(LOG_DIR, LOG_RETENTION_DAYS)
+
+
+setup_logging()
 
 # OpenAI API key is mandatory for scoring.
 if not os.getenv("OPENAI_API_KEY"):
@@ -416,7 +485,12 @@ def should_send_email() -> bool:
     return smtp_config_ok()
 
 
-def send_email(subject: str, text_body: str, html_body: str = None) -> None:
+def send_email(
+    subject: str,
+    text_body: str,
+    html_body: str = None,
+    apply_jobs_count: Optional[int] = None,
+) -> None:
     """
     Send an email using STARTTLS and SMTP auth.
 
@@ -446,7 +520,10 @@ def send_email(subject: str, text_body: str, html_body: str = None) -> None:
             server.ehlo()
             server.login(SMTP_USER, SMTP_PASS)
             server.sendmail(SMTP_FROM, [SMTP_TO], msg.as_string())
-        print(f"Email: sent to {SMTP_TO}")
+        if apply_jobs_count is None:
+            print(f"Email: sent to {SMTP_TO}")
+        else:
+            print(f"Email: sent to {SMTP_TO} (APPLY jobs: {apply_jobs_count})")
     except Exception as e:
         print(f"Email: FAILED to send: {e}")
 
@@ -1667,7 +1744,7 @@ def main():
     # End-of-run email summary (optional; depends on SMTP env vars).
     text_body, html_body = build_apply_email(apply_jobs_for_email)
     subject = f"{EMAIL_SUBJECT_PREFIX} Apply list {TODAY_STR} ({len(apply_jobs_for_email)})"
-    send_email(subject, text_body, html_body)
+    send_email(subject, text_body, html_body, apply_jobs_count=len(apply_jobs_for_email))
 
 
 # =============================================================================

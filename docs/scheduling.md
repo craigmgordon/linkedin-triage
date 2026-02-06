@@ -50,9 +50,9 @@ set -a
 source "/Users/craig/dev/automated-linkedin/FINAL/.env"
 set +a
 
-# Run the job
+# Run the job (logs are handled by the script)
 cd "/Users/craig/dev/automated-linkedin/FINAL"
-python3 "linkedin_triage.py" >> "output/run.log" 2>&1
+python3 "linkedin_triage.py"
 ```
 
 **Add `.env` to `.gitignore`:**
@@ -73,12 +73,12 @@ Tip: you can also store the `.env` outside the repo (e.g. `~/.config/linkedin-tr
 - A wrapper shell script that:
   - activates your Python environment (e.g. `pyenv`, `venv`)
   - exports required environment variables (OpenAI + SMTP)
-  - runs the Python script and logs output
+  - runs the Python script (the script writes timestamped logs)
 - A LaunchAgent plist in:
   - `~/Library/LaunchAgents/com.craig.linkedintriage.plist`
-- Log files configured in your plist, e.g.:
-  - `.../output/launchd.out.log`
-  - `.../output/launchd.err.log`
+- Log files written by the script:
+  - `.../output/logs/YYYY-MM-DD_HH-MM-SS.out.log`
+  - `.../output/logs/YYYY-MM-DD_HH-MM-SS.err.log`
 
 ---
 
@@ -157,11 +157,11 @@ File: `~/Library/LaunchAgents/com.craig.linkedintriage.plist`
     <key>RunAtLoad</key>
     <false/>
 
-    <!-- Logs -->
+    <!-- Optional launchd logs (script already writes output/logs) -->
     <key>StandardOutPath</key>
-    <string>/Users/craig/dev/automated-linkedin/FINAL/output/launchd.out.log</string>
+    <string>/dev/null</string>
     <key>StandardErrorPath</key>
-    <string>/Users/craig/dev/automated-linkedin/FINAL/output/launchd.err.log</string>
+    <string>/dev/null</string>
 
     <!-- Mon–Fri 08:05 -->
     <key>StartCalendarInterval</key>
@@ -206,8 +206,9 @@ launchctl kickstart -k gui/$(id -u)/com.craig.linkedintriage
 Then inspect logs:
 
 ```bash
-tail -n 200 /Users/craig/dev/automated-linkedin/FINAL/output/launchd.out.log
-tail -n 200 /Users/craig/dev/automated-linkedin/FINAL/output/launchd.err.log
+ls -lt /Users/craig/dev/automated-linkedin/FINAL/output/logs
+tail -n 200 /Users/craig/dev/automated-linkedin/FINAL/output/logs/2026-02-06_14-33-21.out.log
+tail -n 200 /Users/craig/dev/automated-linkedin/FINAL/output/logs/2026-02-06_14-33-21.err.log
 ```
 
 ---
@@ -302,8 +303,9 @@ launchctl kickstart -k gui/$(id -u)/com.craig.linkedintriage
 
 ### View logs
 ```bash
-tail -n 200 /Users/craig/dev/automated-linkedin/FINAL/output/launchd.out.log
-tail -n 200 /Users/craig/dev/automated-linkedin/FINAL/output/launchd.err.log
+ls -lt /Users/craig/dev/automated-linkedin/FINAL/output/logs
+tail -n 200 /Users/craig/dev/automated-linkedin/FINAL/output/logs/2026-02-06_14-33-21.out.log
+tail -n 200 /Users/craig/dev/automated-linkedin/FINAL/output/logs/2026-02-06_14-33-21.err.log
 ```
 
 ### Show launchd-related system events around the run time
