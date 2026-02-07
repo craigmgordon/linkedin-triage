@@ -540,9 +540,21 @@ def build_apply_email(apply_jobs: List[Tuple[JobResult, dict, str]]) -> Tuple[st
         html = "<p><b>No APPLY jobs today.</b></p>"
         return text, html
 
+    def score100_for(job: JobResult, llm_data: dict) -> float:
+        score100 = llm_data.get("total_score_100", None) if isinstance(llm_data, dict) else None
+        if score100 is None:
+            return float(job.score) * 10.0
+        return float(score100)
+
+    apply_jobs_sorted = sorted(
+        apply_jobs,
+        key=lambda t: score100_for(t[0], t[1]),
+        reverse=True,
+    )
+
     # ---- Plain text format ----
     lines = [f"APPLY jobs for {TODAY_STR}:"]
-    for job, llm_data, snippet in apply_jobs:
+    for job, llm_data, snippet in apply_jobs_sorted:
         lines.append(f"- {job.score:.1f}/10 — {job.title} @ {job.company}")
         lines.append(f"  {job.url}")
         if job.location:
@@ -563,7 +575,7 @@ def build_apply_email(apply_jobs: List[Tuple[JobResult, dict, str]]) -> Tuple[st
 
     # ---- HTML format ----
     items_html = []
-    for job, llm_data, snippet in apply_jobs:
+    for job, llm_data, snippet in apply_jobs_sorted:
         reasons = llm_data.get("reasons", [])
         if isinstance(reasons, list):
             reasons_html = "".join(
@@ -697,17 +709,18 @@ def llm_triage(job_id: str, summary: Dict[str, str], jd_text: str) -> Tuple[floa
             "thresholds_score_100": {"APPLY": 75, "MAYBE_MIN": 55},
             "category_max_points": {
                 "role_fit_title_and_seniority": 15,
-                "work_arrangement_hybrid_remote": 20,
-                "commute": 10,
-                "company_stage_stability": 10,
-                "core_tech_match_gcp_k8s_terraform_jenkins": 25,
-                "responsibilities_match_platform_automation_ops": 10,
+                "work_arrangement_hybrid_remote": 15,
+                "commute": 5,
+                "company_stage_stability": 5,
+                "core_tech_match_gcp_k8s_terraform_jenkins": 30,
+                "responsibilities_match_platform_automation_ops": 20,
                 "culture_stress_oncall": 10,
             },
             "hard_penalties": {
                 "heavy_oncall_or_24x7": -25,
                 "startup_early_stage": -15,
                 "no_iac_or_low_automation": -20,
+                "staff_management_responsibilities": -15,
             },
             "auto_reject_flags": ["on_site_only", "commute_over_90"],
             "notes": [
@@ -715,6 +728,9 @@ def llm_triage(job_id: str, summary: Dict[str, str], jd_text: str) -> Tuple[floa
                 "Apply penalties after summing categories.",
                 "If any auto_reject_flag is true => decision must be REJECT regardless of score.",
                 "score_10 must equal total_score_100 / 10 with 1 decimal place.",
+                "Use fine-grained scoring within each category. Avoid coarse buckets like only 0/5/10.",
+                "Prefer 1-point increments within the category max unless the evidence is truly binary.",
+                "Apply staff_management_responsibilities penalty ONLY for line management duties (direct reports, performance reviews, hiring/firing, people management). Do NOT penalize for mentoring, coaching, or tech leadership without formal people management.",
             ],
         },
         "job_summary": {
@@ -740,7 +756,7 @@ def llm_triage(job_id: str, summary: Dict[str, str], jd_text: str) -> Tuple[floa
             "  core_tech_match_gcp_k8s_terraform_jenkins,\n"
             "  responsibilities_match_platform_automation_ops,\n"
             "  culture_stress_oncall\n"
-            "- penalties_applied (array of strings from: heavy_oncall_or_24x7, startup_early_stage, no_iac_or_low_automation)\n"
+            "- penalties_applied (array of strings from: heavy_oncall_or_24x7, startup_early_stage, no_iac_or_low_automation, staff_management_responsibilities)\n"
             "- auto_reject_flags (object with boolean keys: on_site_only, commute_over_90)\n"
             "- reasons (array of short bullet strings, max 6)\n"
             "- questions_to_ask (array)\n"
@@ -750,6 +766,8 @@ def llm_triage(job_id: str, summary: Dict[str, str], jd_text: str) -> Tuple[floa
             "Important:\n"
             "- Follow the rubric mechanically.\n"
             "- Base scores only on candidate_profile + job_summary + job_description.\n"
+            "- Use the full range of points in each category; prefer 1-point increments.\n"
+            "- Do not default to small fixed buckets (e.g., 0/5/10) unless evidence is binary.\n"
             "- Do not include any extra keys or any non-JSON text."
         ),
     }
